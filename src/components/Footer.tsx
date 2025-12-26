@@ -2,10 +2,10 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-border/50">
-      <div className="container mx-auto px-6">
+    <footer className="py-6 md:py-8 border-t border-border/50">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-muted-foreground">
+          <div className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
             © {new Date().getFullYear()} Alex Chen. Built with love and too much
             coffee.
           </div>

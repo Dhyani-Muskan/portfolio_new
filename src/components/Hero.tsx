@@ -17,24 +17,24 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-slide-up">
+        <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full glass mb-6 sm:mb-8 animate-slide-up">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-muted-foreground">
+          <span className="text-xs sm:text-sm text-muted-foreground">
             AI Developer & Creative Technologist
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="heading-xl mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+        <h1 className="heading-xl mb-4 sm:mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
           I teach machines to think,{" "}
           <span className="gradient-text italic">sometimes they listen</span>
         </h1>
 
         {/* Subtitle */}
         <p
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up"
+          className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 animate-slide-up px-4"
           style={{ animationDelay: "0.2s" }}
         >
           Building the future with AI, one neural network at a time
@@ -42,13 +42,13 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div
-          className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-slide-up"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-12 animate-slide-up px-4"
           style={{ animationDelay: "0.3s" }}
         >
-          <Button size="lg" className="glow-box hover-glow">
+          <Button size="lg" className="glow-box hover-glow w-full sm:w-auto">
             <a href="#projects">Explore My Work</a>
           </Button>
-          <Button variant="ghost" size="lg" className="border border-border/50">
+          <Button variant="ghost" size="lg" className="border border-border/50 w-full sm:w-auto">
             <a href="#contact">Get In Touch</a>
           </Button>
         </div>
