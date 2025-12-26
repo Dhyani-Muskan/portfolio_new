@@ -45,20 +45,20 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 relative">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-16 md:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <p className="section-title">Portfolio Showcase</p>
           <h2 className="heading-lg mb-4">Things I've Built</h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
             A collection of projects that range from "actually useful" to
             "seemed like a good idea at 2 AM"
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={project.title}

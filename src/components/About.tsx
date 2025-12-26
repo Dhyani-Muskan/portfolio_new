@@ -14,11 +14,11 @@ const techStack = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-16 md:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <p className="section-title text-center mb-4">About Me</p>
         
-        <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-start">
+        <div className="grid lg:grid-cols-[1fr_280px] gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div>
             <h2 className="heading-lg mb-6">
@@ -28,13 +28,13 @@ const About = () => {
                 It wasn't very good at it, but we're working on it.
               </span>
             </h2>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed text-sm md:text-base">
               With over 5 years of experience building everything from
               intelligent chatbots to enterprise web applications, I've learned
               that the best code is the kind that solves real problems (and
               occasionally makes people smile).
             </p>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-muted-foreground mb-8 leading-relaxed text-sm md:text-base">
               When I'm not debugging neural networks or arguing with TypeScript,
               you'll find me experimenting with the latest AI models,
               contributing to open source, or convincing my coffee maker it
@@ -57,9 +57,9 @@ const About = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className="relative lg:sticky lg:top-32">
-            <div className="relative w-72 mx-auto lg:mx-0">
+          {/* Profile Image - Fixed in center of section */}
+          <div className="order-first lg:order-last flex items-center justify-center">
+            <div className="relative w-48 sm:w-56 lg:w-full">
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-2xl blur-3xl" />
               <img
