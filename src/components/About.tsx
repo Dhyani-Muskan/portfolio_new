@@ -16,10 +16,11 @@ const About = () => {
   return (
     <section id="about" className="py-24 relative">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <p className="section-title text-center mb-4">About Me</p>
+        
+        <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-start">
           {/* Text Content */}
           <div>
-            <p className="section-title">About Me</p>
             <h2 className="heading-lg mb-6">
               Hey there! I'm Alex Chen, a software developer who accidentally
               taught a machine learning model to write haikus.{" "}
@@ -57,8 +58,8 @@ const About = () => {
           </div>
 
           {/* Profile Image */}
-          <div className="relative">
-            <div className="relative max-w-md mx-auto">
+          <div className="relative lg:sticky lg:top-32">
+            <div className="relative w-72 mx-auto lg:mx-0">
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-2xl blur-3xl" />
               <img
